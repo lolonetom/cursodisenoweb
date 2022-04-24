@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-areas: 
+    "topheader topheader topheader topheader"
+    "logo mainmenu mainmenu mainmenu"
+    "header header header header"
+    "contenttop contenttop contenttop sidebar"
+    "contentmain contentmain contentmain sidebar"
+    "contentbottom contentbottom contentbottom sidebar"
+    "bottom1 bottom2 bottom3 bottom4"
+    "footer footer footer footer";
+    gap: 10px;
+}
+
+.container > div{
+    border: 0.5px dotted red;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GRID AREA */
+
+.topheader{
+    grid-area: topheader;
+    
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.mainmenu{
+    grid-area: mainmenu;
+}
+
+.header{
+    grid-area: header;
+}
+
+.contenttop{
+    grid-area: contenttop;
+}
+
+.contentmain{
+    grid-area: contentmain;
+}
+
+.contentbottom{
+    grid-area: contentbottom;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.bottom1{
+    grid-area: bottom1;
+}
+
+.bottom2{
+    grid-area: bottom2;
+}
+
+.bottom3{
+    grid-area: bottom3;
+}
+
+.bottom4{
+    grid-area: bottom4;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+/* Mobile-First */
+
+@media only screen and (max-width:285px){
+    .topheader{
+        grid-area: 1 / span 5;
+    }
+    .logo{
+        grid-area: 2 /span 2;
+    }
+    .mainmenu{
+        grid-area: 2 / span 3 ;
+    }
+    .header{
+        grid-area: 3 / span 5;
+    }
+    .contenttop{
+        grid-area: 4 / span 5;
+    }
+    .contentmain{
+        grid-area: 5 / span 5;
+    }
+    .contentbottom{
+        grid-area: 6 / span 5;
+    }
+    .sidebar{
+        grid-area: 7 / span 5;
+    }
+    .bottom1{
+        grid-area: 8 / span 5;
+    }
+    .bottom2{
+        grid-area: 8 / 3 / span 2;
+    }
+    .bottom3{
+        grid-area: 8 / 4 / span 2;
+    }
+    .bottom4{
+        grid-area: 10/ 3 /span 2;
+    }
+    .footer{
+        grid-area: 12 /span 5;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .topheader{
+        grid-area: 1 / span 5;
+    }
+    .logo{
+        grid-area: 2 /span 2;
+    }
+    .mainmenu{
+        grid-area: 2 / span 3 ;
+    }
+    .header{
+        grid-area: 3 / span 5;
+    }
+    .contenttop{
+        grid-area: 4 / span 5;
+    }
+    .contentmain{
+        grid-area: 5 / span 5;
+    }
+    .contentbottom{
+        grid-area: 6 / span 5;
+    }
+    .sidebar{
+        grid-area: 7 / span 5;
+    }
+    .bottom1{
+        grid-area: 8 / 2 / span 2;
+    }
+    .bottom2{
+        grid-area: 8 / 3 / span 2;
+    }
+    .bottom3{
+        grid-area: 8 / 4 / span 2;
+    }
+    .bottom4{
+        grid-area: 10/ 3 /span 2;
+    }
+    .footer{
+        grid-area: 12 /span 5;
+    }
+}
