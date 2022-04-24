@@ -6,9 +6,8 @@
 
 
 .container{
-    background-color: antiquewhite;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "topheader topheader topheader topheader"
     "logo mainmenu mainmenu mainmenu"
     "header header header header"
@@ -22,29 +21,65 @@
 
 .container > div{
     border: 0.5px dotted red;
-    background-color: beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* background-color: beige; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 /* GRID AREA */
 
 .topheader{
     grid-area: topheader;
-    
+    background-color:#085394;
+    height: 3vh;
 }
 
 .logo{
     grid-area: logo;
+    /* background-color: #085394; */
+    display: flex;
+    height: 50px;
+    width: 100%;
+    font-size: 50px;
+    color: #085394;
+    justify-content: center;
+    align-items: center ;
 }
 
 .mainmenu{
     grid-area: mainmenu;
+    display: flex;
+    justify-content: end;
+}
+.mainmenu > .menu{
+    /* float: left; */
+
+}
+
+.mainmenu > .menu > ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header{
     grid-area: header;
+}
+
+.header > h2{
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:end;
+    padding-top: 30px;
+    padding-right: 10px;
 }
 
 .contenttop{
@@ -53,6 +88,36 @@
 
 .contentmain{
     grid-area: contentmain;
+    height: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.contentmain > div{
+    font-size: 30px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+}
+
+.contentmain > div > h2{
+    text-align: center;
+    color: #085394;
+    padding-bottom: 40px;
+}
+
+.contentmain > div > img{
+    height: 30vh;
+    width: 30%;
+    border: 2px #085394 dotted;
+    border-radius: 5px;
+}
+
+.contentmain > div > p{
+    padding-left: 40px;
+    margin-top: 20px;
 }
 
 .contentbottom{
@@ -65,14 +130,122 @@
 
 .bottom1{
     grid-area: bottom1;
+    height: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.bottom1 > div{
+    font-size: 20px;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom1 > div > h3{
+    text-align: center;
+    color: #085394;
+    padding-bottom: 40px;
+}
+
+.bottom1 > div > img{
+    height: 200px;
+    width: 200px;
+    /* border: 2px #085394 dotted; */
+    border-radius: 5px;
+
+}
+
+.bottom1 > div > p{
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.bottom1 >div > p > ul li{
+    list-style: square;
 }
 
 .bottom2{
     grid-area: bottom2;
+    height: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.bottom2 > div{
+    font-size: 20px;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom2 > div > h3{
+    text-align: center;
+    color: #085394;
+    padding-bottom: 40px;
+}
+
+.bottom2 > div > img{
+    height: 200px;
+    width: 200px;
+    /* border: 2px #085394 dotted; */
+    border-radius: 5px;
+
+}
+
+.bottom2 > div > p{
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.bottom2 >div > p > ul li{
+    list-style: square;
 }
 
 .bottom3{
     grid-area: bottom3;
+    height: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.bottom3 > div{
+    font-size: 20px;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom3 > div > h3{
+    text-align: center;
+    color: #085394;
+    padding-bottom: 40px;
+}
+
+.bottom3 > div > img{
+    height: 200px;
+    width: 200px;
+    /* border: 2px #085394 dotted; */
+    border-radius: 5px;
+
+}
+
+.bottom3 > div > p{
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.bottom3 >div > p > ul li{
+    list-style: square;
 }
 
 .bottom4{
@@ -81,6 +254,14 @@
 
 .footer{
     grid-area: footer;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color:#085394;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 
 
