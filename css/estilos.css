@@ -53,8 +53,11 @@
     justify-content: end;
 }
 .mainmenu > .menu{
-    /* float: left; */
+    float: left;
+}
 
+.mainmenu > .menu >a:hover{
+    color: gray;
 }
 
 .mainmenu > .menu > ul li{
@@ -130,7 +133,7 @@
 
 .bottom1{
     grid-area: bottom1;
-    height: 500px;
+    /* height: 500px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
     align-items: center;
@@ -170,7 +173,7 @@
 
 .bottom2{
     grid-area: bottom2;
-    height: 500px;
+    /* height: 500px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
     align-items: center;
@@ -210,7 +213,7 @@
 
 .bottom3{
     grid-area: bottom3;
-    height: 500px;
+    /* height: 500px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
     align-items: center;
